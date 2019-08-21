@@ -1,7 +1,7 @@
 ---
 server:
     port: ${PORT}
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
+spring:
+    cloud:
+        services:
+            registrationMethod: direct
