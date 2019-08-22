@@ -3,5 +3,5 @@ server:
     port: ${PORT}
 eureka:
     instance:
-        ipAddress: ${CF_INSTANCE_IP}
+        ipAddress: ${CF_INSTANCE_INTERNAL_IP}
         preferIpAddress: true
