@@ -1,7 +1,7 @@
 ---
 server:
     port: ${PORT}
-spring:
-    cloud:
-        services:
-            registrationMethod: direct
+eureka:
+    instance:
+        ipAddress: ${CF_INSTANCE_INTERNAL_IP}
+        preferIpAddress: true
